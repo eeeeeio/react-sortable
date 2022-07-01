@@ -17,6 +17,7 @@ export function SortableComposition(Component, flowDirection = VERTICAL) {
     sortEnd = (e) => {
       e.preventDefault()
       draggingIndex = null
+      this.props.sortEnd()
     }
 
     sortStart = (e) => {
@@ -90,6 +91,7 @@ export function SortableComposition(Component, flowDirection = VERTICAL) {
   Sortable.propTypes = {
     items: PropTypes.array.isRequired,
     onSortItems: PropTypes.func.isRequired,
+    sortEnd: PropTypes.func,
     sortId: PropTypes.number,
   };
 
