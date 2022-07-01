@@ -1,7 +1,7 @@
 {
-  "name": "react-sortable",
+  "name": "react-sortable-fix",
   "version": "2.0.0",
-  "description": "Make your React components sortable.",
+  "description": "Make your React components sortable , add sortEnd",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danielstocks/react-sortable/"
+    "url": "https://github.com/eeeeeio/react-sortable/"
   },
   "keywords": [
     "React",
@@ -26,7 +26,7 @@
     "dragndrop",
     "draganddrop"
   ],
-  "author": "Daniel Stocks <daniel@webcloud.se>",
+  "author": "eeeeeio <eeeeeio@qq.com>",
   "license": "MIT",
   "dependencies": {
     "react": "16.x.x",
