@@ -63,6 +63,10 @@ class SortableList extends React.Component {
       items: items
     });
   }
+  
+  sortEnd = () => {
+    console.log("sortEnd")
+  }
 
   render() {
     const { items } = this.state;
@@ -71,6 +75,7 @@ class SortableList extends React.Component {
         <SortableItem
           key={i}
           onSortItems={this.onSortItems}
+          sortEnd={()=>{this.sortEnd}}
           items={items}
           sortId={i}>{item}</SortableItem>
       );
